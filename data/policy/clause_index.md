@@ -1,0 +1,175 @@
+# Clause Index
+
+Meridian Care Plus – Individual Health Policy, Version 1.0. Every clause ID with a short summary.
+
+- **1** — Section 1: Definitions of key terms used
+- **1.1** — Interpretation rules and documents forming the Policy
+- **1.2** — Accident: sudden, unforeseen, involuntary, external, violent event
+- **1.3** — Illness: disease first manifesting during Policy Year
+- **1.4** — Hospital: registration, bed count, staffing, operation theatre requirements
+- **1.5** — Hospitalization: 24-hour in-patient admission requirement
+- **1.5.1** — Minimum 24 consecutive hours of Medically Necessary admission
+- **1.5.2** — Day-Care Procedures exempt from 24-hour minimum
+- **1.5.3** — Diagnostic-only or observation stays are not Hospitalization
+- **1.6** — Day-Care Procedure: under 24 hours, technologically advanced treatment
+- **1.7** — Medical Necessity: five-part test for covered treatment
+- **1.8** — Network and Non-Network Hospital defined by cashless agreement
+- **1.9** — Pre-Existing Condition: diagnosed or treated within prior 48 months
+- **1.10** — Waiting Period: no claims from inception for specified periods
+- **1.11** — Emergency: acute crisis where delay endangers life
+- **1.12** — Medical Practitioner: registered doctor, not insured's close relative
+- **1.13** — AYUSH Treatment: in-patient, recognised AYUSH Hospital only
+- **1.14** — Policy Year: twelve months from inception or renewal
+- **1.15** — Sum Insured: annual maximum liability per Plan
+- **1.16** — Reasonable and Customary Charges: prevailing local standard rates
+- **1.17** — Pre- and Post-Hospitalization periods defined
+- **1.17.1** — Pre-Hospitalization: thirty days before admission
+- **1.17.2** — Post-Hospitalization: sixty days after discharge
+- **1.18** — Congenital Anomaly: internal versus external distinction
+- **2** — Section 2: Scope of cover, eligibility, order of precedence
+- **2.1** — Insuring clause: indemnity for Medically Necessary treatment expenses
+- **2.2** — Eligibility: entry age 18 to 65, lifelong renewability
+- **2.3** — Territorial scope: treatment in India only
+- **2.4** — Plans A, B, C and their limits
+- **2.5** — Order of precedence when provisions conflict
+- **2.5.1** — Specific provision prevails over general provision
+- **2.5.2** — Clause saying "notwithstanding" overrides the clause named
+- **2.5.3** — Exceptions override exclusions if all conditions met
+- **2.5.4** — Schedule amounts prevail; body governs conditions
+- **3** — Section 3: Inpatient Hospitalization benefits and limits
+- **3.1** — Covered in-patient expense heads, including implants
+- **3.2** — Room rent payable up to daily limit
+- **3.3** — Intensive care capped separately from room rent
+- **3.4** — Pre-Hospitalization expenses reimbursed for the related condition
+- **3.5** — Post-Hospitalization expenses reimbursed for the related condition
+- **3.6** — AYUSH Treatment capped at 50% of Sum Insured
+- **3.7** — Domiciliary treatment: three days, 10% cap, listed exclusions
+- **3.8** — Organ donor harvesting expenses covered; organ cost excluded
+- **4** — Section 4: Day-Care Procedures and cataract surgery
+- **4.1** — Day-Care Procedures covered without 24-hour admission
+- **4.2** — Illustrative procedure list; Waiting Periods still apply
+- **4.3** — Unlisted procedures need prior written Company confirmation
+- **4.4** — Cataract surgery: per-eye cap, standard lens only
+- **4.5** — No room rent cap; pre/post-hospitalization rules for day-care
+- **4.6** — Minor outpatient procedures are not Day-Care Procedures
+- **5** — Section 5: Outpatient, health check-up and dental benefits
+- **5.1** — Outpatient consultation, tests, medicines up to annual limit
+- **5.2** — One preventive health check-up annually, no waiting
+- **5.3** — Outpatient dental excluded except accidental natural-teeth injury
+- **5.4** — Post-exposure anti-rabies and anti-tetanus vaccination covered
+- **5.5** — Prescription and original bills required for outpatient claims
+- **5.6** — Age co-pay applies; network co-pay and deductible do not
+- **6** — Section 6: Maternity and newborn benefits and limits
+- **6.1** — Maternity Benefit for delivery plus pre/post-natal care
+- **6.2** — Maternity limits per delivery, inclusive of room rent
+- **6.2.1** — Normal delivery limit per Schedule
+- **6.2.2** — Caesarean section limit per Schedule
+- **6.3** — Maximum two deliveries covered per lifetime
+- **6.4** — Pregnancy complications covered as Illness, outside maternity limits
+- **6.5** — Newborn cover for ninety days; external anomalies excluded
+- **6.6** — Maternity exclusions: surrogacy, voluntary termination, non-medical services
+- **6.7** — Delivery is Planned Treatment; thirty-day advance intimation
+- **7** — Section 7: Emergency admission, intimation and ambulance cover
+- **7.1** — Emergency Hospitalization needs no pre-authorization
+- **7.2** — Intimation of emergency admission within twenty-four hours
+- **7.3** — Emergency road ambulance limit per transport event
+- **7.4** — Air and water ambulance not payable
+- **7.5** — Emergency at non-network hospital; co-pay waiver conditions
+- **7.6** — Accident emergency treatment without admission, per-Accident limit
+- **8** — Section 8: Initial, specified, maternity and continuity waiting periods
+- **8.1** — Thirty-day initial Waiting Period for Illness
+- **8.2** — Accident treatment exempt from initial and specified waiting
+- **8.3** — Twenty-four month Waiting Period for thirteen specified conditions
+- **8.3.1** — Joint replacement: accident exempt, degenerative waits 24 months
+- **8.4** — Maternity requires twenty-four months continuous cover
+- **8.5** — Longest Waiting Period prevails; pre-existing overrides specified conditions
+- **8.6** — Waiting Period continuity on renewal; enhancement restarts
+- **8.7** — Waiting Period measured by admission or procedure date
+- **9** — Section 9: Pre-existing condition waiting period and complications
+- **9.1** — Thirty-six month Waiting Period for Pre-Existing Conditions
+- **9.2** — Declared Pre-Existing Conditions remain subject to waiting
+- **9.3** — Complications of Pre-Existing Conditions treated as the condition
+- **9.4** — Pre-Existing Conditions covered after waiting, subject to exclusions
+- **9.5** — Undisclosed Pre-Existing Conditions: Company rights survive waiting period
+- **9.6** — Accident affecting Pre-Existing Condition area: apportioned cover
+- **10** — Section 10: Permanent exclusions and their exceptions
+- **10.1** — General exclusion rule; exceptions apply only on conditions
+- **10.2** — Cosmetic and plastic surgery excluded
+- **10.2.1** — Exceptions: accident reconstruction, burns, post-cancer reconstruction
+- **10.3** — Dental treatment excluded, including crowns and implants
+- **10.3.1** — Exception: accidental injury to natural teeth within ninety days
+- **10.3.2** — Exception: non-dental jaw cysts and tumours
+- **10.4** — Refractive error correction excluded below 7.5 dioptres
+- **10.5** — Obesity treatment excluded; bariatric surgery exception with conditions
+- **10.6** — Infertility, assisted reproduction, surrogacy, sterilisation, voluntary termination excluded
+- **10.7** — Self-injury and substance abuse excluded; poisoning exception
+- **10.8** — Professional and hazardous sports excluded; recreational activities allowed
+- **10.9** — War, nuclear and radiation risks excluded
+- **10.10** — Non-medical expenses and consumables excluded unless packaged
+- **10.11** — Rest cure, custodial and diagnostic-only admissions excluded
+- **10.12** — Congenital External Anomalies excluded; internal ones differ
+- **10.13** — Supplements and routine vaccination excluded
+- **10.14** — Circumcision and gender reassignment excluded
+- **10.15** — External aids and appliances excluded; implants allowed
+- **10.16** — Unregistered practitioners, non-Hospitals and criminal acts excluded
+- **11** — Section 11: Sub-limits and co-payment rules
+- **11.1** — Room rent capped at 1% of Sum Insured daily
+- **11.2** — Intensive care capped at 2% of Sum Insured daily
+- **11.3** — Proportionate deduction for higher room category, with exceptions
+- **11.4** — General ambulance limit of INR 2,000 per Hospitalization
+- **11.5** — Other sub-limits sit within, not above, Sum Insured
+- **11.6** — Twenty percent co-payment for age sixty and above
+- **11.7** — Ten percent co-payment for non-network treatment
+- **11.8** — Both co-payments cumulate to thirty percent
+- **11.9** — Specific benefit limit prevails over Section 11 limit
+- **12** — Section 12: Network versus non-network hospital rules
+- **12.1** — Cashless treatment at listed Network Hospitals
+- **12.2** — Non-network treatment: reimbursement, co-pay, benchmarked charges
+- **12.3** — Network status decided on date of admission
+- **12.4** — Cashless approval is not final admission of liability
+- **13** — Section 13: Pre-authorization and claim procedure rules
+- **13.1** — Cashless procedure and three-hour decision times
+- **13.2** — Planned treatment needs pre-authorization seventy-two hours ahead
+- **13.3** — Emergency intimation within twenty-four hours
+- **13.4** — Consequences of missing pre-authorization or intimation deadlines
+- **13.4.1** — Planned treatment without pre-authorization: ten percent reduction
+- **13.4.2** — Late emergency intimation: seventy-two hour outer limit
+- **13.5** — Documents required for reimbursement claims
+- **13.6** — Claim filing deadlines by claim type
+- **13.7** — Delay condonation up to sixty days; ninety-day outer limit
+- **13.8** — Settlement timelines and interest on delay
+- **13.9** — Company's rights to examine, inspect, seek second opinion
+- **13.10** — Written reasons required when rejecting a claim
+- **14** — Section 14: Sum Insured, deductibles, bonus and calculation order
+- **14.1** — Sum Insured is an annual aggregate, no carry-forward
+- **14.2** — Voluntary deductible options for Plans B and C
+- **14.3** — No-claim bonus ten percent yearly, fifty percent maximum
+- **14.4** — Bonus reduced by ten percent after a claim
+- **14.5** — One-time reinstatement for unrelated Illness only
+- **14.6** — Five-step order for calculating payable amount
+- **14.6.1** — Step 1: remove excluded and unreasonable amounts
+- **14.6.2** — Step 2: apply sub-limits and proportionate deduction
+- **14.6.3** — Step 3: deduct voluntary deductible
+- **14.6.4** — Step 4: apply co-payment percentages
+- **14.6.5** — Step 5: cap at available Sum Insured
+- **14.7** — Sum Insured increase only at renewal with underwriting
+- **15** — Section 15: Fraud, renewal, free-look, cancellation, general conditions
+- **15.1** — Consequences of non-disclosure and misrepresentation in proposal
+- **15.2** — Fraud: claim rejection, cancellation, premium forfeiture, notice
+- **15.3** — Sixty-month moratorium on non-disclosure disputes, except fraud
+- **15.4** — Premium payment and thirty-day renewal grace period
+- **15.5** — Lifelong renewal; premium revision with three months' notice
+- **15.6** — Fifteen-day free-look period and refund
+- **15.7** — Policyholder cancellation with sliding-scale refund
+- **15.8** — Company cancellation limited to fraud, misrepresentation, non-cooperation
+- **15.9** — Other insurance: no recovery beyond actual expenses
+- **15.10** — Subrogation: Company's right of recovery from third parties
+- **15.11** — Grievance redressal timelines and escalation options
+- **15.12** — Indian law governs; Mumbai courts have jurisdiction
+- **15.13** — Notices must be written and sent to stated addresses
+- **16** — Section 16: Schedule of Benefits tables
+- **16.1** — Plan-wise monetary limits table for Plans A to C
+- **16.2** — Summary table of all Waiting Periods with clauses
+- **16.3** — Summary table of co-payment rates and waivers
+- **16.4** — Summary table of claim and policy time limits
+- **16.5** — Schedule prevails on amounts; clauses govern conditions
