@@ -2,12 +2,13 @@
 
 A small RAG system that decides medical insurance claims against a policy document and cites the clauses it used to arrive at that decision. All data is fictional (Meridian Health Assurance) generated via AI.
 
+Screenshots showing the output - [Drive Link](https://drive.google.com/drive/folders/1tv8iLo1xkw-9gPYtoDwYMfD8dsJGkgrX?usp=sharing)
+
 ## Inputs and outputs
 
 - **Policy:** The policy wording is a single markdown file (`data/policy/meridian_care_plus_policy.md`) that is read during ingestion.
 - **Input:** Each claim is a structured JSON object with 18 fields (see the `Claim` schema in `src/claims_rag/schemas.py`). Most fields are typed values such as dates, amounts, the plan and the claim type. The free-text fields are `diagnosis`, `procedure` and `treatment_notes`, and `treatment_notes` is the long narrative written in natural language.
 - **Output:** The decision is also structured JSON (see the `Decision` schema): `reasoning`, `citations`, `decision`, `payable_amount` and `confidence`.
-
 
 ## How it works
 
