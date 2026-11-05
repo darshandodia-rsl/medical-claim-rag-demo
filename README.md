@@ -12,12 +12,8 @@ Screenshots showing the output - [Drive Link](https://drive.google.com/drive/fol
 
 ## How it works
 
-```
-Claim ─┬─ computed facts (dates, age 60+)
-       └─ hybrid search (embeddings + BM25) ─► top 15 chunks + Schedule 16.1
-                         │
-        facts + chunks ──► LLM (structured output) ──► validation ──► Decision
-```
+<img width="80%" alt="claims_rag_architecture" src="https://github.com/user-attachments/assets/bdf060ba-3b7d-454a-9721-a623f29740f1" />
+
 
 - **Chunking:** One chunk per policy clause and sub-clauses are merged into their parent (155 clauses, 133 chunks).
 - **Retrieval:** A hybrid search approach with Embedding search and BM25 keyword search, merged with Reciprocal Rank Fusion, weighted 70% embedding and 30% keyword.
