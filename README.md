@@ -35,6 +35,6 @@ pip install -r requirements.txt && pip install -e .
 cp .env.example .env                                 # set GROQ_API_KEY and LLM_MODEL
 python -m claims_rag.cli index
 python -m claims_rag.cli retrieve --claim C004       # only retreives the chunks
-python -m claims_rag.cli decide --claim C004     # runs full RAG pipline
+python -m claims_rag.cli decide --claim C004         # runs full RAG pipline
 python -m claims_rag.retrieval.eval_retrieval        # evaluates retreival metrics against test data
 ```
