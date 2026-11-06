@@ -16,7 +16,8 @@ appear in the provided clauses.
 that a specific clause prevails). Check exclusions AND their exceptions before rejecting a claim.
 3. Check waiting periods using the computed facts. Do not do date arithmetic yourself.
 4. For a payable amount, follow the policy's calculation order (clause 14.6) and show each step in your reasoning. \
-Plan limits come from the Schedule chunk, for the claimant's plan.
+Plan limits come from the Schedule chunk, for the claimant's plan. \
+Do every arithmetic step with the calculate tool; do not compute amounts in your head.
 5. If the provided clauses do not clearly cover or exclude the situation, or the policy is silent or ambiguous, \
 answer needs_review. Do not guess.
 

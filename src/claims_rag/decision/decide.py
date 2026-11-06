@@ -4,15 +4,22 @@ import os
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
+from groq import BadRequestError
+from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
 from langchain_groq import ChatGroq
 
 from claims_rag.config import DECISION_LOG_PATH, LLM_MODEL
+from claims_rag.decision.calculator import calculate
 from claims_rag.decision.facts import Facts, compute_facts
 from claims_rag.decision.prompts import DECISION_PROMPT, format_chunks, format_claim, format_facts, format_retry_note
 from claims_rag.retrieval.retrieve import RetrievalResult, retrieve
 from claims_rag.schemas import Claim, Decision
 
 CONFIDENCE_FLOOR = 0.5  # below this confidence, a human reviews the claim
+MAX_TOOL_ROUNDS = 5  # the LLM may ask for the calculator at most this many times in a row
+# The final call has no tools attached. Sent as plain text, the calculator results cannot look like a tool
+# conversation the model wants to continue (Groq answers with a 400 error if it tries to call a tool anyway).
+FINAL_ANSWER_NOTE = "No more tool calls are available. Give your final decision now."
 MAX_ATTEMPTS = 2  # the first try plus one retry
 MONEY_TOLERANCE = 0.01  # amounts closer than this (one cent) count as equal
 
@@ -27,12 +34,54 @@ class DecisionResult:
     attempts: list[dict] = field(default_factory=list)  # one record per LLM call, for the log
 
 
+class ToolLoopChain:
+    """Prompt, then a short calculator loop, then the final structured Decision.
+
+    invoke() takes the prompt inputs and returns {'raw', 'parsed', 'parsing_error', 'tool_calls'}: the same shape
+    as the plain chain plus a record of every calculator call. The loop is plain Python: ask the model, run the
+    tools it asked for, send the results back, repeat until it stops asking (or MAX_TOOL_ROUNDS is reached).
+    """
+
+    def __init__(self, tool_llm, structured_llm):
+        self.tool_llm = tool_llm  # the LLM with the calculator attached
+        self.structured_llm = structured_llm  # the LLM that must answer with a Decision
+
+    def invoke(self, prompt_inputs: dict) -> dict:
+        prompt_messages = DECISION_PROMPT.format_messages(**prompt_inputs)
+        messages = list(prompt_messages)  # the tool loop adds to this copy
+        tool_calls = []
+
+        for _ in range(MAX_TOOL_ROUNDS):
+            reply = self.tool_llm.invoke(messages)
+            if not reply.tool_calls:
+                break
+            messages.append(reply)
+            for call in reply.tool_calls:
+                result = calculate.invoke(call["args"])
+                tool_calls.append({"expression": call["args"].get("expression"), "result": result})
+                messages.append(ToolMessage(content=result, tool_call_id=call["id"]))
+
+        # The final call starts again from the prompt and adds the calculator results as plain text.
+        results_text = "".join(f"{call['expression']} = {call['result']}\n" for call in tool_calls)
+        note = ("Calculator results (exact, computed by software):\n" + results_text if tool_calls else "") + FINAL_ANSWER_NOTE
+
+        try:
+            response = self.structured_llm.invoke(prompt_messages + [HumanMessage(content=note)])
+        except BadRequestError as error:
+            if "tool_use_failed" not in str(error):
+                raise
+            # The model tried to call a tool anyway. Report it as an unparseable answer so the normal retry applies.
+            response = {"raw": AIMessage(content=str(error)), "parsed": None, "parsing_error": error}
+        return {**response, "tool_calls": tool_calls}
+
+
 def build_llm_chain():
-    """Build the chain: prompt, then LLM. Calling it returns {'raw', 'parsed', 'parsing_error'}.
+    """Build the chain. Calling it returns {'raw', 'parsed', 'parsing_error', 'tool_calls'}.
 
     with_structured_output tells the LLM to answer in JSON that matches the Decision schema. 'parsed' is the
     Decision object, 'raw' is the model's message as sent, and 'parsing_error' is set if the JSON did not fit.
     (Plain Python: put the schema in the prompt, call the model, json.loads the reply, then Decision(**data).)
+    bind_tools tells the model the calculator exists. (Plain Python: add the tool's JSON description to the request.)
     """
     if not os.getenv("GROQ_API_KEY"):
         raise RuntimeError("GROQ_API_KEY is not set. Copy .env.example to .env and fill it in.")
@@ -40,9 +89,9 @@ def build_llm_chain():
     llm = ChatGroq(model=LLM_MODEL, temperature=0)
     # method="json_schema" makes Groq enforce the schema. The default (function calling) does not.
     llm_with_structure = llm.with_structured_output(Decision, method="json_schema", include_raw=True)
+    llm_with_calculator = llm.bind_tools([calculate])
 
-    # The "|" pipes the filled-in prompt into the LLM (LangChain calls this LCEL).
-    return DECISION_PROMPT | llm_with_structure
+    return ToolLoopChain(llm_with_calculator, llm_with_structure)
 
 
 def check_payable_amount(decision: Decision, amount_claimed: float) -> list[str]:
@@ -129,6 +178,7 @@ def ask_llm_until_valid(chain, prompt_inputs: dict, claim: Claim, context_clause
 
         attempts.append(
             {
+                "tool_calls": response.get("tool_calls", []),
                 "raw_output": raw_message_text(response["raw"]),
                 "parsed": llm_decision.model_dump() if llm_decision else None,
                 "parsing_error": str(parsing_error) if parsing_error else None,
